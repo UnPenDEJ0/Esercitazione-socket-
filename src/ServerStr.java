@@ -41,6 +41,7 @@ public class ServerStr {
             System.out.println("fine elaborazione ... notte");
             client.close();
         }
+
     }
 
 
