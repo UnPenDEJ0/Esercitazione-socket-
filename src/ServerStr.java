@@ -40,8 +40,17 @@ public class ServerStr {
             outVersoClient.writeBytes(stringModificata+'\n');
             System.out.println("fine elaborazione ... notte");
             client.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
 
+    }
+
+    public static void main(String[] args) {
+        ServerStr servente = new ServerStr();
+
+        servente.attendi();
+        servente.comunica();
     }
 
 
